@@ -1,24 +1,9 @@
-# README
+# Tinder 風簡易マッチングアプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby on Rails を使った実践的な開発方法を学びます
+- Devise を使った認証機能の開発を行います
+- 画像アップロード機能の開発を行います
+- seed を使った初期データの投入方法を学びます
+- Hammer.js を使ってスワイプ機能の開発を行います
+- 中間テーブルを利用したデータベース設計方法を学びます
+- Action Cable を使ってリアルタイムでメッセージを送る機能の開発を行います
