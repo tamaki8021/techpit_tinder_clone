@@ -2,8 +2,8 @@ services:
   db:
     image: postgres:11-alpine
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: root
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: root
     ports:
       - 5432:5432
     volumes:
@@ -18,3 +18,4 @@ services:
       - "3000:3000"
     depends_on:
       - db
+    tty: true
