@@ -2,11 +2,11 @@ DOCKER_COMPOSE := docker compose
 DOCKER_COMPOSE_EXEC := $(DOCKER_COMPOSE) exec
 
 initial: ## 初期セットアップ
-	$(DOCKER_COMPOSE) up -d
+	$(DOCKER_COMPOSE) up
 	$(DOCKER_COMPOSE) build --no-cache --force-rm
-	$(DOCKER_COMPOSE_EXEC) web rails db:create
-	$(DOCKER_COMPOSE_EXEC) web rails db:migrate
-	$(DOCKER_COMPOSE_EXEC) web rails db:seed
+	$(DOCKER_COMPOSE_EXEC) web ./bin/rails db:create
+	$(DOCKER_COMPOSE_EXEC) web ./bin/rails db:migrate
+	$(DOCKER_COMPOSE_EXEC) web ./bin/rails db:seed
 
 ### Docker Compose ###
 dup:
