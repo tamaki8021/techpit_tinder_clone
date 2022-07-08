@@ -1,4 +1,5 @@
 FROM ruby:3.1 
+ENV LANG ja_JP.utf8
 
 RUN mkdir /app
 WORKDIR /app
