@@ -14,7 +14,7 @@
   <% if current_user.id == @user.id %>
     <div class="user-action">
       <div class="user-action-common">
-        <%= link_to "#" do %>
+        <%= link_to destroy_user_session_path, method: :delete, data: { "turbo-method": :delete } do %>
           <i class="fas fa-sign-out-alt fa-2x"></i>
         <% end %>
         <span>ログアウト</span>
