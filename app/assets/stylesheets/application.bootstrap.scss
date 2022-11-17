@@ -1,5 +1,7 @@
-@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons';
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+
 @import "top";
 @import "users/sign_up";
 @import "users/sign_in";
