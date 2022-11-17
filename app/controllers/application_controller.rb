@@ -3,8 +3,9 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  # サインアップ時にnameとgenderを保存できるように設定
+  # メールとパスワード以外の値を保存できるように設定
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :gender])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:name, :self_introduction])
   end
 end
