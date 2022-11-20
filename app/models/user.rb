@@ -9,6 +9,9 @@ class User < ApplicationRecord
 
   enum gender: { man: 0, woman: 1 }
 
+  # /uploaders/profile_image_uploaderをマウント
+  mount_uploader :profile_image, ProfileImageUploader
+
   # パスワードを入力しなくても編集ができるようにパスワードのparamsが空の時パスワード関連のparamsを削除
   def update_without_current_password(params, *options)
 
