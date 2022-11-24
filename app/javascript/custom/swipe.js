@@ -12,6 +12,10 @@ if (location.pathname == "/users") {
           "scale(" + (20 - index) / 20 + ") translateY(-" + 30 * index + "px)";
         card.style.opacity = (10 - index) / 10;
       });
+
+      if (newCards.length == 0) {
+        document.querySelector(".no-user").classList.add("is-active");
+      }
     }
     initCards();
 
