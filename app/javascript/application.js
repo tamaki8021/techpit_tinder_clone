@@ -3,6 +3,7 @@ import "@hotwired/turbo-rails";
 import "controllers";
 import "bootstrap";
 import "@fortawesome/fontawesome-free";
-import 'hammerjs';
+import "hammerjs";
 
-import './custom/profile_image_upload';
+import "./custom/profile_image_upload";
+import "./custom/swipe";
