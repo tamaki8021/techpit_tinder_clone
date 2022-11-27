@@ -1,6 +1,7 @@
-document
-  .getElementById("profile_image_upload")
-  .addEventListener("change", function (e) {
+const profile_image_upload = document.getElementById("profile_image_upload");
+
+if (profile_image_upload) {
+  profile_image_upload.addEventListener("change", function (e) {
     if (e.target.files.length) {
       let reader = new FileReader();
       reader.onload = function (e) {
@@ -20,3 +21,4 @@ document
       return reader.readAsDataURL(e.target.files[0]);
     }
   });
+}
