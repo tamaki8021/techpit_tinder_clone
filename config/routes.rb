@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root "top#index"
 
   resources :users, only: [:show, :index]
+  resources :reactions, only: [:create]
 end

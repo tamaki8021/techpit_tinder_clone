@@ -7,3 +7,4 @@ import "hammerjs";
 
 import "./custom/profile_image_upload";
 import "./custom/swipe";
+import "./custom/get_csrf_token";
