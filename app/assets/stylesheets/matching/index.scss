@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .matching {
   &-title {
     font-weight: bold;
@@ -44,7 +48,7 @@
 }
 
 .chat-btn {
-  background-color: #FD3378;
+  background-color: #fd3378;
   border-radius: 30px;
   font-size: 12px;
 }
