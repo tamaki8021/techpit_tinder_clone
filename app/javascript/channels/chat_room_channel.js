@@ -10,8 +10,8 @@ const appRoom = consumer.subscriptions.create("ChatRoomChannel", {
   },
 
   received(data) {
-    // Called when there's incoming data on the websocket for this channel
-    return alert(data["chat_message"]);
+    const chatMessages = document.getElementById('chat-messages');
+    chatMessages.insertAdjacentHTML('beforeend', data['chat_message']);
   },
 
   speak: function(chat_message, chat_room_id) {
